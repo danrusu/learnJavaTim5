@@ -22,19 +22,25 @@
 			<option value="3">Nagarro</option>
 		</select>
 
+		<!--
+			<input type="button" value="SUBMIT" id="submit" onclick="setResult()">
+		-->
+		<img src="favicon.ico" onclick="setResult()" title="CLICK to get the result"/>
 
-<!--		<input type="button" value="SUBMIT" id="submit"
-			onclick="getResult()">-->
-		<img src="favicon.ico" onclick="getResult()" title="SUBMIT"/>
-
-		RESULT
-		<div id="result"></div>
+		<div class="result">
+			RESULT
+			<div id="result">&nbsp;</div>
+		</div>
 
     </body>
 
+	<!-- 
+		You can move this script to a separate file simpleForm.js (best practice) and include it here
+		<script src="simpleForm.js"></script>
+	-->	
 	<script>
 		function getFormData(){
-		// const getFormData = () => {
+			// const getFormData = () => {  // alternative for defining this function
 			firstName = document.getElementById('firstName').value;
 			lastName = document.getElementById('lastName').value;
 			age = document.getElementById('age').value;
@@ -42,9 +48,10 @@
 			return `${firstName} ${lastName} ${age} ${getSelectText()}`;
 		};
 
-		const getResult = () => {
+		function setResult(){
 			const result = getFormData();
 			const resultElement = document.getElementById('result');
+			
 			resultElement.innerText = result;
 		};
 
@@ -55,12 +62,14 @@
 		function getSelectText(){
 			const selectValue = document.getElementById('employer').value;
 			console.log(`selectValue = ${selectValue}`);
+			
 			const options = [].slice.call(document.getElementsByTagName('option'));
+			
 			const selectText = getOptionTextByValue(options, selectValue);
 			console.log(`selectText = ${selectText}`);
+			
 			return selectText;
 		};
-
 	</script>
 		
 </html>
