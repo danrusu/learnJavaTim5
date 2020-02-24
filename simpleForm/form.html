@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+    
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>Form</title>
+		
+		<link rel="icon" type="image/icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="form.css">
+		
+	</head>
+	
+    <body>
+		First name<input type="text" id="firstName" title="FIRST NAME"/>
+		Last name<input type="text" id="lastName"/>
+		Age<input type="number" id="age"/>
+		Employer<select id="employer">
+			<option value="1">Saguaro</option>
+			<option value="2">Azetz</option>
+			<option value="3">Nagarro</option>
+		</select>
+
+
+<!--		<input type="button" value="SUBMIT" id="submit"
+			onclick="getResult()">-->
+		<img src="favicon.ico" onclick="getResult()" title="SUBMIT"/>
+
+		RESULT
+		<div id="result"></div>
+
+    </body>
+
+	<script>
+		function getFormData(){
+		// const getFormData = () => {
+			firstName = document.getElementById('firstName').value;
+			lastName = document.getElementById('lastName').value;
+			age = document.getElementById('age').value;
+
+			return `${firstName} ${lastName} ${age} ${getSelectText()}`;
+		};
+
+		const getResult = () => {
+			const result = getFormData();
+			const resultElement = document.getElementById('result');
+			resultElement.innerText = result;
+		};
+
+		function getOptionTextByValue(options, value){
+			return options.filter(op => op.value == value)[0].innerText;
+		}
+
+		function getSelectText(){
+			const selectValue = document.getElementById('employer').value;
+			console.log(`selectValue = ${selectValue}`);
+			const options = [].slice.call(document.getElementsByTagName('option'));
+			const selectText = getOptionTextByValue(options, selectValue);
+			console.log(`selectText = ${selectText}`);
+			return selectText;
+		};
+
+	</script>
+		
+</html>

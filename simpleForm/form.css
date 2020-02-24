@@ -1,0 +1,26 @@
+input, #result, select{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+#submit{
+    margin-bottom: 30px;
+}
+
+img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+}
+
+#result, select{
+    border: 1px solid blue;
+    width: 150px;
+    font-size: 20px;
+}
