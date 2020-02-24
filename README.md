@@ -2,7 +2,9 @@
 
 ### Resources
 
-1. IDE - [Visual Studio Code](https://code.visualstudio.com/)
+1. TOOLS 
+   - [DEV TOOLS](https://developers.google.com/web/tools/chrome-devtools)
+   - [IDE - Visual Studio Code](https://code.visualstudio.com/)   
 
 2. HTML 
    - [W3Schools HMTL](https://www.w3schools.com/html/default.asp)
