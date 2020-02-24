@@ -2,7 +2,7 @@
 
 ### Resources
 
-#### [MDN](https://developer.mozilla.org/en-US/)
+0. [MDN](https://developer.mozilla.org/en-US/)
 
 1. TOOLS 
    - [DEV TOOLS](https://developers.google.com/web/tools/chrome-devtools)
