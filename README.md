@@ -7,7 +7,7 @@
       - [Console](https://developers.google.com/web/tools/chrome-devtools/console)
       - [CSS](https://developers.google.com/web/tools/chrome-devtools/css)
       - [Network](https://developers.google.com/web/tools/chrome-devtools/network)
-      - [JavascriptSnippets](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)
+      - [JavaScript Snippets](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)
    - [IDE - Visual Studio Code](https://code.visualstudio.com/)   
 
 2. HTML 
