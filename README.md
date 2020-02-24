@@ -4,6 +4,10 @@
 
 1. TOOLS 
    - [DEV TOOLS](https://developers.google.com/web/tools/chrome-devtools)
+      - [Console](https://developers.google.com/web/tools/chrome-devtools/console)
+      - [CSS](https://developers.google.com/web/tools/chrome-devtools/css)
+      - [Network](https://developers.google.com/web/tools/chrome-devtools/network)
+      - [JavascriptSnippets](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets)
    - [IDE - Visual Studio Code](https://code.visualstudio.com/)   
 
 2. HTML 
