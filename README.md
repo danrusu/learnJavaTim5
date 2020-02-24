@@ -2,6 +2,8 @@
 
 ### Resources
 
+#### [MDN](https://developer.mozilla.org/en-US/)
+
 1. TOOLS 
    - [DEV TOOLS](https://developers.google.com/web/tools/chrome-devtools)
       - [Console](https://developers.google.com/web/tools/chrome-devtools/console)
@@ -18,8 +20,9 @@
    - [Colors](https://www.w3schools.com/colors/default.asp)
    - [CSS selectors](https://www.w3schools.com/cssref/css_selectors.asp)
  
-4. JavaScript
+4. JavaScript   
    - [W3Schools JavaScript](https://www.w3schools.com/js/default.asp)
+   - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 
 
