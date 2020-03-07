@@ -13,6 +13,7 @@
 	</head>
 	
     <body>
+		<div class="form">
 		First name<input type="text" id="firstName" title="FIRST NAME"/>
 		Last name<input type="text" id="lastName"/>
 		Age<input type="number" id="age"/>
@@ -29,6 +30,8 @@
 			onmouseenter="this.style.width='100px';this.style.height='100px';"
 			onmouseleave="this.style.width='64px';this.style.height='64px';"
 			/>
+
+		</div>
 
 		<div class="result">
 			RESULT
@@ -48,14 +51,17 @@
 			lastName = document.getElementById('lastName').value;
 			age = document.getElementById('age').value;
 
-			return `${firstName} ${lastName} ${age} ${getSelectText()}`;
+			return `${firstName} ${lastName} <br> Age: ${age} <br> ${getSelectText()}`;
 		};
 
 		function setResult(){
 			const result = getFormData();
 			const resultElement = document.getElementById('result');
 			
-			resultElement.innerText = result;
+			resultElement.innerHTML= result;
+			fetch('http://danrusu.ro/api/calculate.php?firstNumber=&secondNumber=&operation=1')
+				.then(r=>r.json())
+				.then(j=>console.log(j));
 		};
 
 		function getOptionTextByValue(options, value){
